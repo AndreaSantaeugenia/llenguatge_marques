@@ -1,32 +1,95 @@
-.menu¨{
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #66b3b8;
-    padding: 3px;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu ul{
-    list-style-type: none;
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #004d99;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo del header */
+.header-logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+/* Redes sociales del header */
+.header-xarxes a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-xarxes img {
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Menú de navegación */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b3d9ff;
+}
+
+/* Footer */
+footer {
+    background-color: #00264d;
+    color: #ccc;
+    padding: 20px 0;
     text-align: center;
 }
 
-.menu li{
-    display: inline;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
+/* Logo y menú del footer */
+footer .header-logo img {
+    height: 40px;
+    margin-bottom: 10px;
 }
 
-.menu li a{
-    padding: 2px 7px 2px 7px;
-    color: black;
-    background-color: #66b3b8;
+footer nav a {
+    color: #ccc;
+    margin: 0 8px;
     text-decoration: none;
 }
 
-.menu li a:hover{
-    background-color: #a2c4c6;
-    color: black;
+footer nav a:hover {
+    color: #fff;
+}
+
+/* Enlace de Mapa Web */
+footer a {
+    color: #b3d9ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Texto de copyright */
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
 }
