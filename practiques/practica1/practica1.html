@@ -35,6 +35,81 @@
             <a href="contacte.html">Contacte</a>
         </nav>
     </header>
+
+    <main>
+        <!-- apartat de qui soc-->
+        <section id="#quisoc">
+            <h2>Qui som</h2>
+            <p>El meu nom es Andrea Santaeugenia i tinc 25 anys</p>
+            <h3>Botigues disponibles</h3>
+            <table>
+                <tr>
+                    <td>Girona</td>
+                    <td>Nike</td>
+                    <td>08/12/2015</td>
+                </tr>
+                <tr></tr>
+                    <td>Tarragona</td>
+                    <td>Nike</td>
+                    <td>10/12/2015</td>
+                </tr>
+                <tr>
+                    <td>La roca</td>
+                    <td>Nike</td>
+                    <td>07/12/2015</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- apartat contacte -->
+        <section id="contacte">
+            <li>Contacta a Andrea o omple l'apartat d'abaix i ens posarem en contacte</li>
+                <ol>
+                    <li><i>Correu electrònic</i></li>    
+                        <ul>
+                            <li>andrea_santaeugeniamartos@iescarlesvallbona.cat</li>
+                        </ul>
+                    <li>Telèfon</li>
+                        <ul>
+                            <li>635581697</li>
+                        </ul>
+                    <li>Població</li>
+                        <ul>
+                            <li>Bigues i Riells</li>
+                        </ul>
+                </ol>
+
+        <!-- contacte formulari -->        
+        <form action="contacte.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom">
+
+            <label for="cognom">Cognom:</label>
+            <input type="text" id="cognom" name="cognom">
+            
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="tel" name="tel">
+
+            <label for="data">Data naixement:</label>
+            <input type="date" id="data" name="data">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="missatge">Missatge:</label>
+            <input type="text" id="missatge" name="missatge">
+
+            <label for="estudis">Has fet algun cicle formatiu?:</label>
+            <input type="checkbox" id="estudis" name="estudis">
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancel·lar</button>
+            
+        </form>
+        </section>
+    </main>
+
     <footer>
       <div>
         <div class="header-logo">
@@ -42,7 +117,7 @@
           <img src="img/logo.png" alt="Logo web" >
       </div>
         <nav>
-          <a href="practica1.html">Inici</a>
+          <a href="index.html">Inici</a>
           <a href="presentacio.html">Presentació</a>
           <a href="practiques.html">Pràctiques</a>
           <a href="cv.html">CV</a>
@@ -54,8 +129,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
