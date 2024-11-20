@@ -2,43 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practica 01</title>
-    <link rel="stylesheet" href="cssp1.css">
+    <title>Examen html</title>
 </head>
 <body>
     <header>
-        <!--contenidor, per separar per grups -->
-        <div class="header-logo">
-            <!-- imatge -->
-            <img src="img/logo.png" alt="Logo web" >
-        </div>
-        <div class="header-xarxes">
-            <!-- afegir un link -->
-            <a href="https://es.linkedin.com/" target="_blank">
-                LinkedIn
-                <img src="img/linkedin.png" alt="Logo LinkedIn">
-            </a>
-            <a href="https://x.com/" target="_blank">
-                X
-                <img src="img/x.png" alt="Logo x">
-            </a>
-            <a href="https://youtube.com/" target="_blank">
-                Youtube
-                <img src="img/youtube.png" alt="Logo youtube">
+        <!-- capçalera amb logo que ha d’actuar com a enllaç que dirigeixi a un hipotètic **`inici.html`**.-->
+        <div id="capçalera">   
+            <a href="inici.html" target="_blank">
+                <img src="imatges/logo-nike.svg" alt="Logo empresa">
             </a>
         </div>
-        <nav>
-            <a href="practica1.html">Inici</a>
-            <a href="presentacio.html">Presentacio</a>
-            <a href="practiques.html">Practiques</a>
-            <a href="cv.html">CV</a>
-            <a href="contacte.html">Contacte</a>
-        </nav>
+        <!-- menu navegació-->
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="#capçalera" target="_self">Inici</a></li>
+                    <li><a href="#quisom" target="_self">Qui som</a></li>
+                    <li><a href="#contacte" target="_self">Contacte</a></li>
+                </ul>     
+            </nav> 
+        </div>
     </header>
 
+<!-- cos principal -->
     <main>
-        <!-- apartat de qui soc-->
-        <section id="#quisoc">
+        <!-- apartat de qui som-->
+        <section id="#quisom">
             <h2>Qui som</h2>
             <p>El meu nom es Andrea Santaeugenia i tinc 25 anys</p>
             <h3>Botigues disponibles</h3>
@@ -108,24 +97,34 @@
             
         </form>
         </section>
+
     </main>
 
+    <!-- footer -->
     <footer>
-      <div>
-        <div class="header-logo">
-          <!-- imatge -->
-          <img src="img/logo.png" alt="Logo web" >
-      </div>
+        <a href="inici.html" target="_blank">
+            <img src="imatges/logo-nike.svg" alt="Logo empresa">
+        </a>
         <nav>
-          <a href="index.html">Inici</a>
-          <a href="presentacio.html">Presentació</a>
-          <a href="practiques.html">Pràctiques</a>
-          <a href="cv.html">CV</a>
-          <a href="contacte.html">Contacte</a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="imatges/icon-facebook.png" alt="Logo facebook">
+            </a>
+            <a href="https://instagram.com/" target="_blank"></a>
+                <img src="imatges/icon-instagram.png" alt="Logo instagram">
+            </a>
+            <a href="https://youtube.com/" target="_blank">
+                <img src="img/youtube.png" alt="Logo youtube">
+            </a>
         </nav>
-      </div>
-      <p><a href="sitemap.xml">Mapa Web</a></p>
-      <p>© 2024 Projecte Asix html. Tots els drets reservats</p>
+        <nav>
+            <ul>
+                <li><a href="examen.html">Inici</a></li>
+                <li><a href="qui-som.html">Qui som</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>     
+        </nav>
+        <p>&copy; Examen html Andrea santaeugenia Martos</p>
     </footer>
 </body>
 </html>
+
