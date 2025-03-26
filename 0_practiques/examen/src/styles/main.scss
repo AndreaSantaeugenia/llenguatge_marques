@@ -1,0 +1,282 @@
+// Variables
+$primary-color: #ff52bf;  // Color principal, usado para elementos destacados.
+$secondary-color: #fff;   // Color secundario, generalmente para fondos o textos.
+$accent-color: #ff0077;   // Color de acento, usado para llamar la atención en botones.
+$dark-color: #00252e;     // Color oscuro, usado en fondos o textos importantes.
+$text-color: #333;        // Color para el texto general.
+$font-family: 'Poppins', sans-serif;  // Fuente principal usada en todo el proyecto.
+$white: #ffffff;
+$light-bg: #f7faff;
+
+// General Styles
+* {
+  margin: 0;              // Elimina margenes predeterminados de todos los elementos.
+  padding: 0;             // Elimina rellenos predeterminados de todos los elementos.
+  box-sizing: border-box; // Incluye bordes y rellenos en el cálculo del ancho/alto.
+  list-style-type: none;  
+}
+
+body {
+  font-family: $font-family; // Aplica la fuente definida en las variables.
+  line-height: 1.6;          // Define la altura de lí¡inea para mejorar la legibilidad.
+  color: $text-color;        // Aplica el color del texto definido en las variables.
+  background-color: $light-bg; // Fondo blanco para el cuerpo.
+}
+
+// Header
+header {
+  display: flex;                // Usa flexbox para organizar los elementos.
+  justify-content: space-between; // Separa los elementos a los extremos del header.
+  align-items: center;          // Centra los elementos verticalmente.
+  padding: 2rem;           // Espaciado interno del header.
+  background-color: $light-bg;
+
+  .logo img{
+    height: 50px;
+  }
+
+  .Try {
+    a {
+      text-decoration: none;
+
+      p {
+        background-color: $white;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        border-radius: 20px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  header a {
+    text-decoration: none;
+    color: $primary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    }
+  }
+
+  header a:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: $light-bg;
+    background-image: url('../img/bg-hero-desktop.svg');
+    background-size:cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: $dark-color;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    margin: 1rem 0 2rem;
+    color: $text-color;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .hero button {
+    background-color: $primary-color;
+    color: $white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .hero button:hover {
+    background-color: $accent-color;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  
+    article {
+      display: flex;
+      align-items: center;
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+  
+      img {
+        max-width: 50%;
+        border-radius: 10px;
+      }
+  
+      h2 {
+        margin-top: 0;
+        color: $primary-color;
+      }
+  
+      p {
+        color: $text-color;
+      }
+    }
+  
+    .grow, .users {
+      flex-direction: row;
+
+      h2 {
+        order: -1;
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        text-align: left;
+      }
+  
+      img {
+        order: 2;
+      }
+    }
+  
+    .flowing {
+      flex-direction: row-reverse;
+
+      h2 {
+        order: -1;
+        text-align: right;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        text-align: right;
+      }
+  
+      img {
+        order: 1;
+      }
+    }
+  }
+
+  .cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: $light-bg;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta button {
+    background-color: $primary-color;
+    color: $white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cta button:hover {
+    background-color: $accent-color;
+  }
+
+  //footer
+  
+  footer {
+    display: flex;               
+    justify-content:space-between; 
+    padding: 3rem;        
+    background-color: #00252e;
+    color: $white;
+    font-size: medium;
+  }
+
+  footer .footer-logo {
+    height: 50px;
+  }
+
+  footer .footer-menu-1 {
+    display: inline-block;
+    gap: 1.5rem;
+    margin: auto;
+  }
+
+  footer .footer-menu-2 {
+    display: inline-block;
+    margin: auto;
+  }
+
+  footer .footer-social {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  footer .footer-copyright {
+    margin-top: auto;
+    text-align:right;
+    font-size: small;
+  }
+
+  @media (max-width: 768px) { //Moviles
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .features {
+      grid-template-columns: 1fr;
+    }
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      background-image:  url('../img/bg-hero-mobile.svg');
+    }
+    .hero-content {
+      max-width: 100%;
+    }
+
+    .hero img {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+
+

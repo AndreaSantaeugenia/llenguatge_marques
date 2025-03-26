@@ -1,0 +1,54 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, menú al mig, botó al final */
+    align-items: center; /* Centra verticalment */
+    gap: 20px; /* Espai entre elements */
+    padding: 20px;
+    background-color: hsl(193, 100%, 96%);
+    border-bottom: 2px solid hsl(208, 11%, 55%);
+}
+
+/* Logo */
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    gap: 20px; /* Espai entre els elements del menú */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+/* Button */
+.cta {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    padding:
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: lightsteelblue;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {  
+    background-color: coral;
+} 
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editable {
+    border: none;
+    background: none;
+    font-size: 16px;
+    width: 100%;
+    cursor: text;
+    outline: none;
+    padding: 5px;
+}
+
+.editable:focus {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+button.edit {
+    background-color: #28a745;
+}
+
+button.delete {
+    background-color: #dc3545;
+}
+
+button.edit:hover {
+    background-color: #218838;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.save {
+    background-color: #ffc107;
+}
+
+button.save:hover {
+    background-color: orange;
+}
+
+

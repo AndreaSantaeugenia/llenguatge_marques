@@ -1,0 +1,70 @@
+.colorBlue{
+    color: blue;
+}
+
+.colorGreen{
+    color: #4CAF50;
+}
+
+.colorDarkGreen{
+    color: #18671d;
+}
+
+.colorPurple{
+    color: purple;
+}
+
+.colorYellow{
+    color: yellow;
+}
+
+.colorRed{
+    color: red;
+}
+
+.colorWhite{
+    color: white;
+}
+
+
+:root {
+    --colorBlue: blue;
+    --colorGreen: #4CAF50;
+    --colorPurple: #b369e8;
+    --colorYellow: yellow;
+    --colorDarkGreen: #18671d;
+    --colorWhite: white;
+    --colorRed: #e86969; 
+    --colorCian: #9cddd6;
+}
+
+/* PART 4: Aplicació d'Estils amb CSS */
+
+/* Estil basic per al cos de la pàgina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--colorCian); /* Blanc */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estil per als botons */
+button {
+    background-color:  var(--colorGreen); /* Verd */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    color: var(--colorWhite); /* Blanc */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Canvi de color quan es passa el ratolí per sobre dels botons */
+button:hover {
+    background-color: var(--colorPurple); /* Lila claro*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+}
